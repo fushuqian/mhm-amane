@@ -1,0 +1,43 @@
+{
+  "author": "Mica Home",
+  "category": "影音",
+  "description": "番号刮削与整理：扫描下载库、多源刮削、按模板入库",
+  "frontend": {
+    "card": "card.js",
+    "entry": "index.js"
+  },
+  "icon": "scan",
+  "id": "amane",
+  "name": "Amane 影库",
+  "permissions": [
+    "process.run",
+    "fs.write:/data/modules/amane",
+    "net.listen"
+  ],
+  "sidecar": {
+    "args": [],
+    "binary": "sidecar/amaned",
+    "env": {
+      "AMANE_DOWNLOAD_DIR": "/downloads",
+      "AMANE_MEDIA_DIR": "/media",
+      "AMANE_SAFE_DIRS": "/media,/downloads"
+    },
+    "executables": [
+      "sidecar/amaned"
+    ],
+    "healthPath": "/health",
+    "healthTimeoutSec": 10,
+    "permissions": [
+      "process.run",
+      "fs.write:/data/modules/amane",
+      "net.listen"
+    ],
+    "platform": "linux/amd64",
+    "sha256": {
+      "sidecar/amaned": "b536a7c0f15718f4d2b98dfb04c997c0c10588614b7881bf520d4959689a7879"
+    },
+    "socketName": "amane.sock"
+  },
+  "tone": "tone-b",
+  "version": "0.2.1"
+}

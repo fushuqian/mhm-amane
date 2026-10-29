@@ -1,0 +1,7 @@
+dist/
+data/
+*.zip
+*.db
+*.db-shm
+*.db-wal
+.tmp/

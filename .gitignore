@@ -1,0 +1,20 @@
+# 参考资料：上游 Amane 源码克隆，不提交
+amane-repo/
+
+# 构建产物：sidecar 二进制、模块 zip
+amane-lite/module/sidecar/
+amane-lite/dist/
+*.zip
+
+# pack 生成的前端副本（源在 amane-lite/internal/api/web）
+amane-lite/module/frontend/app.js
+amane-lite/module/frontend/style.css
+
+# 运行数据与本地临时文件
+amane-lite/data/
+data/
+*.db
+*.db-shm
+*.db-wal
+*.part
+.screenshots/.tmp/

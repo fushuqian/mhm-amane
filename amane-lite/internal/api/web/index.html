@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amane 精简版</title>
+  <style>
+    :root { color-scheme: dark; --mh-bg:#111114; --mh-text:#e8e8ea; --mh-text-3:#9a9aa2;
+      --mh-line:rgba(255,255,255,.12); --mh-soft:rgba(255,255,255,.06);
+      --mh-card-a:rgba(255,255,255,.07); --mh-card-b:rgba(255,255,255,.02);
+      --mh-accent:#8ab4ff; --mh-radius:12px; }
+    body { margin: 0; background: var(--mh-bg); min-height: 100vh; }
+    #app { max-width: 1080px; margin: 0 auto; padding: 24px 18px 60px; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module">
+    import { mount } from './app.js';
+    mount(document.getElementById('app'), null);
+  </script>
+</body>
+</html>
