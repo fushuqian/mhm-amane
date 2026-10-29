@@ -6,3 +6,5 @@
 - 整理根目录：`-media` 或 `AMANE_MEDIA_DIR`；Mica Home 模块 manifest 里固定 `/media`
 - 监听：`AMANE_ADDR` 或 `-addr`；Mica Home 注入 `MICA_SIDECAR_ADDR`（`tcp://` 或 `unix://`）
 - 本仓库无密钥。站点 cookie 位于 `config.json` 的 `site_settings`，不要提交到公共仓库。
+- GitHub：<https://github.com/fushuqian/mhm-amane>（仓库根为 `d:\Trae\mhm-amane`，代码在 `amane-lite/`）。
+- 本机推送 GitHub 必须走宿主代理：`git -c http.proxy=http://127.0.0.1:7890 -c https.proxy=http://127.0.0.1:7890 push`；直连会 `Connection was reset`。
